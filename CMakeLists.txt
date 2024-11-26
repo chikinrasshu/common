@@ -12,7 +12,7 @@ set(chk_common_prv_libs )
 # Platform agnostic code #
 ##########################
 
-set(chk_common_hdr "common.hpp" "error.hpp" "function.hpp" "logging.hpp" "source_loc.hpp" "string.hpp" "types.hpp")
+set(chk_common_hdr "common.hpp" "error.hpp" "function.hpp" "logging.hpp" "ptr.hpp" "source_loc.hpp" "string.hpp" "types.hpp")
 set(chk_common_src "common.cpp" "logging.cpp")
 
 list(TRANSFORM chk_common_hdr PREPEND "${CMAKE_CURRENT_SOURCE_DIR}/include/chk/common/")
