@@ -1,5 +1,3 @@
-#pragma once
-
 #include <chk/common/format.h>
 
 #include <stdio.h>
