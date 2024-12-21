@@ -2,8 +2,7 @@
 
 #include <stdio.h>
 
-CHK_COMMON_API s32 chk_vformat(char *buffer, size_t size, const char *msg,
-                               va_list orig_args) {
+CHK_COMMON_API s32 chk_vformat(char *buffer, size_t size, const char *msg, va_list orig_args) {
     va_list args;
     va_copy(args, orig_args);
 

@@ -5,8 +5,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-CHK_COMMON_API void chk_raw_log(chk_log_severity_t sev, const char *msg,
-                                const char *file, const char *func, s32 line) {
+CHK_COMMON_API void chk_raw_log(chk_log_severity_t sev, const char *msg, const char *file, const char *func, s32 line) {
     const char *sev_name = "Unknown";
     switch (sev) {
         case CHK_LOG_SEVERITY_DEBUG: sev_name = "Debug"; break;
@@ -22,8 +21,7 @@ CHK_COMMON_API void chk_raw_log(chk_log_severity_t sev, const char *msg,
     if (sev == CHK_LOG_SEVERITY_FATAL) { exit(1); }
 }
 
-CHK_COMMON_API void chk_raw_log_f(chk_log_severity_t sev, const char *msg,
-                                  const char *file, const char *func, s32 line,
+CHK_COMMON_API void chk_raw_log_f(chk_log_severity_t sev, const char *msg, const char *file, const char *func, s32 line,
                                   ...) {
     static char chk_raw_log_f_buf[1024];
 
